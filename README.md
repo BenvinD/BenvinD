@@ -9,8 +9,10 @@
 </p>
 
 <p align="center">
-  <a href="https://github.com/BenvinD"><img src="https://img.shields.io/github/followers/BenvinD?label=Followers&style=for-the-badge&color=6366f1" alt="Followers"/></a>
+  <a href="https://www.linkedin.com/in/benvin-david/"><img src="https://img.shields.io/badge/LinkedIn-Benvin%20David-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="mailto:benvin.david.work@gmail.com"><img src="https://img.shields.io/badge/Email-benvin.david.work-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
   <a href="https://twitter.com/Benvin_D"><img src="https://img.shields.io/badge/Twitter-%40Benvin__D-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter"/></a>
+  <a href="https://github.com/BenvinD"><img src="https://img.shields.io/github/followers/BenvinD?label=Followers&style=for-the-badge&color=6366f1" alt="Followers"/></a>
   <img src="https://komarev.com/ghpvc/?username=BenvinD&label=Profile%20views&color=6366f1&style=for-the-badge" alt="Profile views"/>
 </p>
 
@@ -145,6 +147,8 @@ Managed a team of 20 to organize technical workshops, coding competitions, and A
 ### 🤝 Connect with Me
 
 <p align="left">
+  <a href="https://www.linkedin.com/in/benvin-david/"><img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
+  <a href="mailto:benvin.david.work@gmail.com"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
   <a href="https://github.com/BenvinD"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/></a>
   <a href="https://twitter.com/Benvin_D"><img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter"/></a>
 </p>
