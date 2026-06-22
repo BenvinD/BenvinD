@@ -5,10 +5,6 @@
 </p>
 
 <p align="center">
-  <em>"If you think I am simple, then you have misunderstood the problem."</em>
-</p>
-
-<p align="center">
   <a href="https://www.linkedin.com/in/benvin-david/"><img src="https://img.shields.io/badge/LinkedIn-Benvin%20David-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/></a>
   <a href="mailto:benvin.david.work@gmail.com"><img src="https://img.shields.io/badge/Email-benvin.david.work-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/></a>
   <a href="https://twitter.com/Benvin_D"><img src="https://img.shields.io/badge/Twitter-%40Benvin__D-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter"/></a>
