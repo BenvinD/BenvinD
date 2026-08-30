@@ -23,5 +23,5 @@ I build production AI systems and infrastructure. Core engineer behind an intern
 
 ## Featured Work
 
-- [🚀 AI Gateway](#) — Multi-provider LLM gateway with provider abstraction, PII guardrails, rate limiting, and Redis load balancing
-- [🧠 Agentic RAG](#) — Enterprise RAG with hybrid search (BM25 + vector), cross-encoder reranking, and bidirectional guardrails
+- [🚀 AI Gateway](https://github.com/BenvinD/vortex-ai-gateway) — Multi-provider LLM gateway with provider abstraction, PII guardrails, rate limiting, and Redis load balancing
+- [🧠 Agentic RAG](https://github.com/BenvinD/lemma-rag) — Enterprise RAG with hybrid search (BM25 + vector), cross-encoder reranking, and bidirectional guardrails
