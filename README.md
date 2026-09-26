@@ -3,7 +3,7 @@
 <h3 align="center">AI Engineer · LLM Platforms · AI Safety & Guardrails</h3>
 
 <p align="center">
-  I build the infrastructure that lets whole organisations ship AI safely, reliably, and at scale —<br/>
+  I build the infrastructure that lets whole organisations ship AI safely, reliably, and at scale,<br/>
   and I write down the decisions behind it.
 </p>
 
@@ -20,51 +20,51 @@
 | | |
 |---|---|
 | 📈 **130M+ AI calls** routed through an LLM gateway I built and scaled (peak **950K/day**) | 👥 **75+ product teams** depend on it in production |
-| 🛡️ **Pitched & led** an AI Safety platform — approved by senior leadership, released to **100 teams** | 🔌 **4 LLM providers** unified behind one API — OpenAI, Anthropic, Vertex AI, Cohere |
+| 🛡️ **Pitched & led** an AI Safety platform, approved by senior leadership, released to **100 teams** | 🔌 **4 LLM providers** unified behind one API: OpenAI, Anthropic, Vertex AI, Cohere |
 | 📊 **57 endpoints** instrumented for real-time cost, usage & error tracking | 🚀 **+21% throughput / −17% cost** from a profiling-driven fix in my open-source gateway |
 
 ## 🎯 What I'm looking for
 
-**Remote roles** as an **AI Engineer**, **LLM Platform Engineer**, or **ML Infrastructure Engineer** — ideally where I can own AI platform problems end-to-end, from design doc to production: gateways, routing, guardrails, evaluation, and observability.
+**Remote roles** as an **AI Engineer**, **LLM Platform Engineer**, or **ML Infrastructure Engineer**, ideally where I can own AI platform problems end-to-end, from design doc to production: gateways, routing, guardrails, evaluation, and observability.
 
 ---
 
 ## 💼 Experience
 
-### Member of Technical Staff — Zoho Corporation
+### Member of Technical Staff @ Zoho Corporation
 *Jan 2023 – Present · Converted from intern to full-time*
 
-- 🔀 **Multi-provider LLM gateway** — unified OpenAI, Anthropic, Google Vertex AI, and Cohere behind a single API, scaled to **130M+ AI calls** for **75+ product teams**, acting as the platform owner they work with directly.
-- 🛡️ **AI Safety & Orchestration platform** — wrote the proposal, pitched, and led the evolution of the gateway from an API proxy into a governed PaaS product; approved by senior leadership and **released internally to 100 teams**.
-- 🧱 **Guardrails pipeline** — customizable PII detection, abuse monitoring, and topic/word/regex filters using a Chain of Responsibility design, deployable against any LLM provider or self-hosted model.
+- 🔀 **Multi-provider LLM gateway**: unified OpenAI, Anthropic, Google Vertex AI, and Cohere behind a single API, scaled to **130M+ AI calls** for **75+ product teams**, acting as the platform owner they work with directly.
+- 🛡️ **AI Safety & Orchestration platform**: wrote the proposal, pitched, and led the evolution of the gateway from an API proxy into a governed PaaS product; approved by senior leadership and **released internally to 100 teams**.
+- 🧱 **Guardrails pipeline**: customizable PII detection, abuse monitoring, and topic/word/regex filters using a Chain of Responsibility design, deployable against any LLM provider or self-hosted model.
 - ⚖️ **Weighted L7 load balancer** (Redis-based) routing inference traffic across self-hosted LLMs to optimize GPU utilization, validated with stress testing.
-- 💳 **Platform-wide credit system** — purchase, deduction, expiry, and audit — built as a reusable module.
+- 💳 **Platform-wide credit system** covering purchase, deduction, expiry, and audit, built as a reusable module.
 - 📊 **End-to-end observability** across 130M+ requests and 57 endpoints (cost attribution, usage, error rates); led the evaluation of LLM serving frameworks (vLLM, llama.cpp, MLX) that guided architecture.
 
 ---
 
 ## 🚀 Featured Projects
 
-### [Vortex AI Gateway](https://github.com/BenvinD/vortex-ai-gateway) — production-grade, OpenAI-compatible LLM gateway · `v0.1.0`
+### [Vortex AI Gateway](https://github.com/BenvinD/vortex-ai-gateway): production-grade, OpenAI-compatible LLM gateway · `v0.1.0`
 
-> One endpoint for OpenAI, Anthropic, and Ollama — with the resilience, governance, and observability you'd want in production.
+> One endpoint for OpenAI, Anthropic, and Ollama, with the resilience, governance, and observability you'd want in production.
 
-- **Streaming done right** — SSE streaming that meters every stream and cancels the upstream call when the client disconnects.
-- **Resilience** — full-jitter retries under a wall-clock deadline, per-provider circuit breakers, and fallback chains.
-- **Governance** — hashed API keys, distributed per-key RPM/TPM rate limiting in a single atomic Redis Lua script, and a cost ledger.
-- **Honest engineering** — built a two-tier cache (exact + semantic); a 40-pair experiment found no safe similarity threshold, so the semantic tier **ships off by default**.
-- **Documented design** — every significant trade-off is captured in one of **29 Architecture Decision Records**.
-- **Measured performance** — latency & TTFT histograms, OpenTelemetry traces, an 18-panel Grafana dashboard; k6 load testing exposed hidden tracing overhead, and the fix delivered **−17% per-request cost, +21% throughput**.
+- **Streaming done right**: SSE streaming that meters every stream and cancels the upstream call when the client disconnects.
+- **Resilience**: full-jitter retries under a wall-clock deadline, per-provider circuit breakers, and fallback chains.
+- **Governance**: hashed API keys, distributed per-key RPM/TPM rate limiting in a single atomic Redis Lua script, and a cost ledger.
+- **Honest engineering**: built a two-tier cache (exact + semantic); a 40-pair experiment found no safe similarity threshold, so the semantic tier **ships off by default**.
+- **Documented design**: every significant trade-off is captured in one of **29 Architecture Decision Records**.
+- **Measured performance**: latency & TTFT histograms, OpenTelemetry traces, an 18-panel Grafana dashboard; k6 load testing exposed hidden tracing overhead, and the fix delivered **−17% per-request cost, +21% throughput**.
 
 `Python` `FastAPI` `httpx` `Redis` `SQLite` `OpenTelemetry` `Prometheus` `Grafana` `k6` `Docker` `GitHub Actions`
 
-### [Lemma RAG](https://github.com/BenvinD/lemma-rag) — agentic RAG with an evaluation harness · *in progress*
+### [Lemma RAG](https://github.com/BenvinD/lemma-rag): agentic RAG with an evaluation harness · *in progress*
 
 > Retrieval you can measure: every change gated by retrieval and answer-quality metrics in CI.
 
-- **Hybrid retrieval** — Qdrant BM25 + dense embeddings, fused with hand-written Reciprocal Rank Fusion, then cross-encoder reranking.
-- **Agentic loop** (LangGraph) — query rewriting, relevance grading, corrective re-retrieval, cited answers, and honest refusal.
-- **Evaluation as a CI gate** — Recall@K, MRR, nDCG, faithfulness, and LLM-as-judge.
+- **Hybrid retrieval**: Qdrant BM25 + dense embeddings, fused with hand-written Reciprocal Rank Fusion, then cross-encoder reranking.
+- **Agentic loop** (LangGraph): query rewriting, relevance grading, corrective re-retrieval, cited answers, and honest refusal.
+- **Evaluation as a CI gate**: Recall@K, MRR, nDCG, faithfulness, and LLM-as-judge.
 - Built on top of Vortex AI Gateway, with Docling document ingestion.
 
 `Python` `LangGraph` `Qdrant` `Docling` `sentence-transformers`
@@ -119,19 +119,19 @@
 
 ## 🏆 Certifications & Achievements
 
-- 🎖️ **Claude Certified Developer – Foundations (CCDV-F)** — Anthropic, 2026 · scored **970/1000**
-- 🥇 **51st of 1,773** — HackerRank Orchestrate, 2026
-- 🏅 **Code Gladiator Finalist** — TechGig, placed **510th of 416,409**
-- 👥 **Team Lead, Karunya Hacks** — led a team of 20 running workshops and competitions
-- 📜 NVIDIA DLI — Fundamentals of Deep Learning · Building Real-Time Video AI Applications · Video AI at the Edge on Jetson Nano
+- 🎖️ **Claude Certified Developer – Foundations (CCDV-F)**, Anthropic, 2026 · scored **970/1000**
+- 🥇 **51st of 1,773** in HackerRank Orchestrate, 2026
+- 🏅 **Code Gladiator Finalist**, TechGig: placed **510th of 416,409**
+- 👥 **Team Lead, Karunya Hacks**: led a team of 20 running workshops and competitions
+- 📜 NVIDIA DLI: Fundamentals of Deep Learning · Building Real-Time Video AI Applications · Video AI at the Edge on Jetson Nano
 
 ## 🎓 Education
 
-**B.Tech, Computer Science and Engineering** — Karunya Institute of Technology and Sciences *(2019 – 2023)*
+**B.Tech, Computer Science and Engineering**, Karunya Institute of Technology and Sciences *(2019 – 2023)*
 
 ---
 
 <p align="center">
   <b>💬 Hiring for a remote AI / LLM platform role?</b><br/>
-  Let's talk — reach out through my GitHub profile and I'll share my full resume.
+  Let's talk. Reach out through my GitHub profile and I'll share my full resume.
 </p>
