@@ -3,7 +3,8 @@
 <h3 align="center">AI Engineer · LLM Platforms · AI Safety & Guardrails</h3>
 
 <p align="center">
-  I build the infrastructure that lets whole organisations ship AI safely, reliably, and at scale.
+  I build the infrastructure that lets whole organisations ship AI safely, reliably, and at scale —<br/>
+  and I write down the decisions behind it.
 </p>
 
 <p align="center">
@@ -24,14 +25,7 @@
 
 ## 🎯 What I'm looking for
 
-**Remote roles** as an **AI Engineer**, **LLM Platform Engineer**, or **ML Infrastructure Engineer** — ideally where I can own AI platform problems end-to-end: gateways, routing, guardrails, evaluation, and observability.
-
-## 🌍 Why I work well remotely
-
-- **I write things down.** My gateway project carries **29 Architecture Decision Records** — including one explaining why a feature ships *off* after an experiment showed it wasn't safe. Clear async writing is how I work by default.
-- **I work across many teams.** My platform serves 75+ internal teams, so I'm used to gathering requirements, supporting consumers, and shipping without hand-holding.
-- **I own things end-to-end.** I've taken a platform from idea → leadership pitch → approved roadmap → production release.
-- **I back claims with data.** Load tests, profiling, and evaluation experiments drive my decisions — not guesswork.
+**Remote roles** as an **AI Engineer**, **LLM Platform Engineer**, or **ML Infrastructure Engineer** — ideally where I can own AI platform problems end-to-end, from design doc to production: gateways, routing, guardrails, evaluation, and observability.
 
 ---
 
@@ -40,8 +34,8 @@
 ### Member of Technical Staff — Zoho Corporation
 *Jan 2023 – Present · Converted from intern to full-time*
 
-- 🔀 **Multi-provider LLM gateway** — unified OpenAI, Anthropic, Google Vertex AI, and Cohere behind a single API, scaled to **130M+ AI calls** for **75+ product teams**.
-- 🛡️ **AI Safety & Orchestration platform** — pitched and led the evolution of the gateway from an API proxy into a governed PaaS product; approved by senior leadership and **released internally to 100 teams**.
+- 🔀 **Multi-provider LLM gateway** — unified OpenAI, Anthropic, Google Vertex AI, and Cohere behind a single API, scaled to **130M+ AI calls** for **75+ product teams**, acting as the platform owner they work with directly.
+- 🛡️ **AI Safety & Orchestration platform** — wrote the proposal, pitched, and led the evolution of the gateway from an API proxy into a governed PaaS product; approved by senior leadership and **released internally to 100 teams**.
 - 🧱 **Guardrails pipeline** — customizable PII detection, abuse monitoring, and topic/word/regex filters using a Chain of Responsibility design, deployable against any LLM provider or self-hosted model.
 - ⚖️ **Weighted L7 load balancer** (Redis-based) routing inference traffic across self-hosted LLMs to optimize GPU utilization, validated with stress testing.
 - 💳 **Platform-wide credit system** — purchase, deduction, expiry, and audit — built as a reusable module.
@@ -58,7 +52,8 @@
 - **Streaming done right** — SSE streaming that meters every stream and cancels the upstream call when the client disconnects.
 - **Resilience** — full-jitter retries under a wall-clock deadline, per-provider circuit breakers, and fallback chains.
 - **Governance** — hashed API keys, distributed per-key RPM/TPM rate limiting in a single atomic Redis Lua script, and a cost ledger.
-- **Honest engineering** — built a two-tier cache (exact + semantic); a 40-pair experiment found no safe similarity threshold, so the semantic tier **ships off by default**, documented in an ADR.
+- **Honest engineering** — built a two-tier cache (exact + semantic); a 40-pair experiment found no safe similarity threshold, so the semantic tier **ships off by default**.
+- **Documented design** — every significant trade-off is captured in one of **29 Architecture Decision Records**.
 - **Measured performance** — latency & TTFT histograms, OpenTelemetry traces, an 18-panel Grafana dashboard; k6 load testing exposed hidden tracing overhead, and the fix delivered **−17% per-request cost, +21% throughput**.
 
 `Python` `FastAPI` `httpx` `Redis` `SQLite` `OpenTelemetry` `Prometheus` `Grafana` `k6` `Docker` `GitHub Actions`
