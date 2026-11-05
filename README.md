@@ -43,34 +43,6 @@
 
 ---
 
-## 🚀 Featured Projects
-
-### [Vortex AI Gateway](https://github.com/BenvinD/vortex-ai-gateway): production-grade, OpenAI-compatible LLM gateway · `v0.1.0`
-
-> One endpoint for OpenAI, Anthropic, and Ollama, with the resilience, governance, and observability you'd want in production.
-
-- **Streaming done right**: SSE streaming that meters every stream and cancels the upstream call when the client disconnects.
-- **Resilience**: full-jitter retries under a wall-clock deadline, per-provider circuit breakers, and fallback chains.
-- **Governance**: hashed API keys, distributed per-key RPM/TPM rate limiting in a single atomic Redis Lua script, and a cost ledger.
-- **Honest engineering**: built a two-tier cache (exact + semantic); a 40-pair experiment found no safe similarity threshold, so the semantic tier **ships off by default**.
-- **Documented design**: every significant trade-off is captured in one of **29 Architecture Decision Records**.
-- **Measured performance**: latency & TTFT histograms, OpenTelemetry traces, an 18-panel Grafana dashboard; k6 load testing exposed hidden tracing overhead, and the fix delivered **−17% per-request cost, +21% throughput**.
-
-`Python` `FastAPI` `httpx` `Redis` `SQLite` `OpenTelemetry` `Prometheus` `Grafana` `k6` `Docker` `GitHub Actions`
-
-### [Lemma RAG](https://github.com/BenvinD/lemma-rag): agentic RAG with an evaluation harness · *in progress*
-
-> Retrieval you can measure: every change gated by retrieval and answer-quality metrics in CI.
-
-- **Hybrid retrieval**: Qdrant BM25 + dense embeddings, fused with hand-written Reciprocal Rank Fusion, then cross-encoder reranking.
-- **Agentic loop** (LangGraph): query rewriting, relevance grading, corrective re-retrieval, cited answers, and honest refusal.
-- **Evaluation as a CI gate**: Recall@K, MRR, nDCG, faithfulness, and LLM-as-judge.
-- Built on top of Vortex AI Gateway, with Docling document ingestion.
-
-`Python` `LangGraph` `Qdrant` `Docling` `sentence-transformers`
-
----
-
 ## 🛠️ Tech Stack
 
 **AI & LLM**
